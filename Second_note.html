@@ -1,0 +1,29 @@
+<html><head>
+     <meta charset="UTF-8">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <link rel="stylesheet" href="style.css">
+   </head><body><div><h1>Second note</h1></div>
+<div><br></div>
+<div>This is a second one. Maybe with some simple code?</div>
+<div><br></div>
+<div><tt>const extractImageInfo = (src) =&gt; {</tt></div>
+<div><tt>  const cleanSrc = src.replace(/\\"/g, '"');</tt></div>
+<div><tt>  const [header, base64Data] = cleanSrc.split(",");</tt></div>
+<div><tt><br></tt></div>
+<div><tt>  if (!base64Data) return null;</tt></div>
+<div><tt><br></tt></div>
+<div><tt>  const mimeMatch = header.match(/data:image\/([a-zA-Z0-9.-]+(?:;|$))/);</tt></div>
+<div><tt>  if (!mimeMatch) return null;</tt></div>
+<div><tt><br></tt></div>
+<div><tt>  const mimeType = mimeMatch[1].replace("", "");</tt></div>
+<div><tt><br></tt></div>
+<div><tt>  return {</tt></div>
+<div><tt>    mimeType,</tt></div>
+<div><tt>    base64Data,</tt></div>
+<div><tt>  };</tt></div>
+<div><tt>};</tt></div>
+<div><br></div>
+<div>Nothing special about this code. Just testing monostyle works.</div>
+
+    <div class="published-date">Published on January 1, 2025</div>
+  </body></html>
